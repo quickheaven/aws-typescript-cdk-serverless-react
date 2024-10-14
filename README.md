@@ -10,3 +10,12 @@ Best describe as:
 
 ## Spring Boot
 Spring boot is all about getting a Java Spring application up and running very quickly.
+
+Running Spring Boot:
+* Spring Application
+  - Created Spring Application Context
+* Created Spring Application Context @SpringBootApplication
+  - Combination of @Configuration (Java equivalent of <beans> file
+  - ... And @ComponentScan (Looks for @Components)
+  - ... And @EnableAutoConfiguration (Examines ApplicationContext & classpath; Creates missing beans based on intelligent defaults)
+
