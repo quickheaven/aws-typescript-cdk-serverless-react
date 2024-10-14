@@ -8,3 +8,5 @@ Best describe as:
 * Decomposition of single system into a suite of small services, each running as independent processes and intercommunicating via open protocols.
 * Fine Grained SOA - Adrian Cockroft (Netflix)
 
+## Spring Boot
+Spring boot is all about getting a Java Spring application up and running very quickly.
