@@ -1,5 +1,5 @@
 # Microservices with Spring Cloud
-A deep-dive into the Microservice architectural style, and how to implement it with Spring technologies. (September 2024)
+A deep-dive into the Microservice architectural style, and how to implement it with Spring technologies. 
 
 ## What are Microservices
 **Best describe as:**
@@ -18,4 +18,5 @@ Spring boot is all about getting a Java Spring application up and running very q
   - Combination of @Configuration (Java equivalent of <beans> file
   - ... And @ComponentScan (Looks for @Components)
   - ... And @EnableAutoConfiguration (Examines ApplicationContext & classpath; Creates missing beans based on intelligent defaults)
+
 
