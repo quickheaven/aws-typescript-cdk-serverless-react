@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: lab-3-client
+  profiles:
+    active: northamerica
+
+  config:
+    import: "optional:configserver:http://localhost:8001"
+
+server:
+  port: 8002
