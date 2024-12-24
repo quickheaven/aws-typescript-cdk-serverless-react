@@ -1,5 +1,6 @@
 # Microservices with Spring Cloud
-A deep-dive into the Microservice architectural style, and how to implement it with Spring technologies. 
+A deep-dive into the Microservice architectural style, and how to implement it with Spring technologies. \
+_(Updated version of https://github.com/quickheaven/Microservices-With-Spring)_
 
 ## What are Microservices
 **Best describe as:**
