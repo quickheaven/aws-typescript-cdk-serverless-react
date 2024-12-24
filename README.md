@@ -19,4 +19,43 @@ Spring boot is all about getting a Java Spring application up and running very q
   - ... And @ComponentScan (Looks for @Components)
   - ... And @EnableAutoConfiguration (Examines ApplicationContext & classpath; Creates missing beans based on intelligent defaults)
 
+## Spring Cloud
+The goal is to address the needs of cloud based applications. 
+Spring Cloud is a sub-project within Spring IO Umbrella. And is itself an umbrella project.
+Spring Cloud addresses common patterns in distributed computing.
+Spring Cloud is based on Spring Boot.
+
+### Spring and NETFLIX since 2017
+Eureka -> Eureka \
+Archaius -> Spring Cloud Config \
+Ribbon -> Spring Cloud Load Balancer \
+Zuul -> Spring Cloud Gateway \
+Hystrix -> Resilience4J / Spring Cloud Circuit Breaker \
+Hystrix Dashboard -> Micrometer \
+Turbine -> Micrometer
+
+### DevTools
+Optional dependency.
+Automatically restarts applications aftermost code changes.
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-devtools</artifactId>
+	<optional>true</optional>
+</dependency>
+```
+### Spring Cloud Configuration
+(Centralized Version Configuration)
+Provides centralized, externalized, secured, easy-to-reach source of application configuration.
+
+### Spring Cloud Bus
+Provides simple way to notify clients to config changes
+
+### Spring Cloud Netflix Eureka
+Service Discovery - Allows applications to register themselves as clients
+
+
+
+
+
 
