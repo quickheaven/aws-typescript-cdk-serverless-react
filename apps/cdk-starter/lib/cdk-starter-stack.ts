@@ -45,7 +45,6 @@ export class CdkStarterStack extends cdk.Stack {
       value: myL2Bucket.bucketName,
     });
 
-
     new L3Bucket(this, "MyL3Bucket", 3);
   }
 }
