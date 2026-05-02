@@ -89,6 +89,9 @@ importers:
       aws-cdk-lib:
         specifier: 'catalog:'
         version: 2.69.0(constructs@10.6.0)
+      cdk-starter:
+        specifier: 'link:'
+        version: 'link:'
       constructs:
         specifier: 'catalog:'
         version: 10.6.0
