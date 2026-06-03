@@ -5,7 +5,7 @@ import { PhotosStack } from "../lib/PhotosStack";
 import { PhotosHandlerStack } from "../lib/PhotosHandlerStack";
 
 const app = new cdk.App();
-new PhotosStack(app, "PhotosStack", {
+const photosStack = new PhotosStack(app, "PhotosStack", {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
     region: process.env.CDK_DEFAULT_REGION,
@@ -13,6 +13,7 @@ new PhotosStack(app, "PhotosStack", {
 });
 
 new PhotosHandlerStack(app, "PhotosHandlerStack", {
+  targetBucketArn: photosStack.photosBucketArn,
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
     region: process.env.CDK_DEFAULT_REGION,
