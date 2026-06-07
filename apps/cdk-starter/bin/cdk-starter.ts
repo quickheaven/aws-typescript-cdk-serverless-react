@@ -21,5 +21,5 @@ new PhotosHandlerStack(app, "PhotosHandlerStack", {
   },
 });
 
-const tagger = new BucketTagger('level', 'test');
+const tagger = new BucketTagger("level", "test");
 cdk.Aspects.of(app).add(tagger);
