@@ -31,9 +31,9 @@ catalog:
   husky: "^9.1.7"
   
   # AWS CDK
-  aws-cdk: "2.69.0"
-  aws-cdk-lib: "2.69.0"
-  constructs: "^10.0.0"
+  aws-cdk: "2.150.0"
+  aws-cdk-lib: "2.150.0"
+  constructs: "^10.3.0"
   
   # Utilities
   source-map-support: "^0.5.21"
