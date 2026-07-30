@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "lib": ["es2020"],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["jest", "node"],
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "rootDir": "./src/infra"
+  },
+  "exclude": [
+    "node_modules",
+    "cdk.out",
+    "dist"
+  ]
+}
