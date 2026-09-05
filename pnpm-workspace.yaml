@@ -37,3 +37,8 @@ catalog:
   
   # Utilities
   source-map-support: "^0.5.21"
+
+  esbuild: "^0.17.14"
+  "@types/aws-lambda": "^8.10.114"
+  "@types/uuid": "^9.0.1"
+  uuid: "^9.0.0"    
