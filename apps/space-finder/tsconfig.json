@@ -15,7 +15,7 @@
     "types": ["jest", "node"],
     "resolveJsonModule": true,
     "outDir": "dist",
-    "rootDir": "./src/infra"
+    "rootDir": "./src"
   },
   "exclude": [
     "node_modules",

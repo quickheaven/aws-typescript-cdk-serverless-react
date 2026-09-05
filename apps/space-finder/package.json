@@ -17,14 +17,18 @@
   "dependencies": {
     "aws-cdk-lib": "catalog:",
     "constructs": "catalog:",
-    "source-map-support": "catalog:"
+    "source-map-support": "catalog:",
+    "@types/uuid": "catalog:",
+    "uuid": "catalog:"    
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@types/aws-lambda": "catalog:",        
     "@types/jest": "catalog:",
     "@types/node": "catalog:",
     "aws-cdk": "catalog:",
+    "esbuild": "catalog:",    
     "eslint": "catalog:",
     "jest": "catalog:",
     "ts-jest": "catalog:",
