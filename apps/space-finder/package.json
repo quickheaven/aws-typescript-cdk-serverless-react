@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "catalog:",
+    "@aws-sdk/client-s3": "catalog:",
     "constructs": "catalog:",
     "source-map-support": "catalog:",
     "@types/uuid": "catalog:",
