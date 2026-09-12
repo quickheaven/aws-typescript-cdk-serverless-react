@@ -43,3 +43,4 @@ catalog:
   "@types/uuid": "^9.0.1"
   uuid: "^9.0.0"    
   "@aws-sdk/client-s3": "^3.301.0"
+  "@aws-sdk/client-dynamodb": "^3.303.0"
