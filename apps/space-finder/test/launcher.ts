@@ -8,10 +8,10 @@ import { APIGatewayProxyEvent, Context } from "aws-lambda";
 
 handler(
   {
-    httpMethod: "POST",
-    body: JSON.stringify({
-      location: "Dublin",
-    }),
+    httpMethod: "GET",
+    //body: JSON.stringify({
+    //  location: "Dublin",
+    //}),
   } as APIGatewayProxyEvent,
   {} as Context,
 );

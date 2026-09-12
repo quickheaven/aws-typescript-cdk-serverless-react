@@ -1,6 +1,9 @@
 ### 
 GET https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod/spaces
 
+###
+GET https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod/spaces?id=83d8a7c6-89ee-40b6-bc82-27fac0d25933
+
 ### POST
 POST https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod/spaces
 content-type: application/json
