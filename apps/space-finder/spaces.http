@@ -11,4 +11,12 @@ content-type: application/json
  {
     "location": "Paris"
  }
+
+
 ###
+PUT https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod/spaces?id=83d8a7c6-89ee-40b6-bc82-27fac0d25933
+content-type: application/json
+
+ {
+    "location": "Paris2"
+ }
