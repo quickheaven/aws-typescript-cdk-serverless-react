@@ -1,22 +1,40 @@
-### 
-GET https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod/spaces
+### Variable definitions
+@baseUrl = https://shjfowznkd.execute-api.us-east-1.amazonaws.com
+@contentType = application/json
 
-###
-GET https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod/spaces?id=83d8a7c6-89ee-40b6-bc82-27fac0d25933
+### Get all spaces
+# @name getAllSpaces
+GET {{baseUrl}}/prod/spaces
 
-### POST
-POST https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod/spaces
-content-type: application/json
+
+### Create a new space
+# @name createSpace
+POST {{baseUrl}}/prod/spaces
+content-type: {{ contentType }}
 
  {
     "location": "Paris"
  }
 
 
-###
-PUT https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod/spaces?id=83d8a7c6-89ee-40b6-bc82-27fac0d25933
-content-type: application/json
+### Set the id
+ @id = {{ createSpace.response.body.id }}
+
+
+### Get a space by ID
+# @name getSpaceById
+GET {{baseUrl}}/prod/spaces?id={{id}}
+
+### Update a space by ID
+# @name updateSpace
+PUT {{baseUrl}}/prod/spaces?id={{id}}
+content-type: {{ contentType }}
 
  {
     "location": "Paris2"
  }
+
+### Delete a space by ID
+# @name deleteSpace
+DELETE {{baseUrl}}/prod/spaces?id={{id}}
+

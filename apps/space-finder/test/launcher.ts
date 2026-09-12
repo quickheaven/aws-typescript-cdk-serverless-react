@@ -8,16 +8,16 @@ import { APIGatewayProxyEvent, Context } from "aws-lambda";
 
 handler(
   {
-    httpMethod: "PUT",
+    httpMethod: "DELETE",
     queryStringParameters: {
-      id: "ba3a48c1-bc26-48de-b167-988051da5e16",
+      id: "4fc4814e-9bad-4e73-b2f1-5cc7b5f73b7b",
     },
     //body: JSON.stringify({
     //  location: "Dublin",
     //}),
-    body: JSON.stringify({
-      location: "Dublin updated",
-    }),
+    //body: JSON.stringify({
+    //  location: "Dublin updated",
+    //}),
   } as unknown as APIGatewayProxyEvent,
   {} as Context,
 );
