@@ -8,6 +8,7 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { getSpaces } from "./GetSpaces";
 import { updateSpace } from "./UpdateSpace";
 import { deleteSpace } from "./DeleteSpace";
+import { MissingFieldError } from "../shared/Validator";
 
 const ddbClient = new DynamoDBClient({});
 
@@ -38,12 +39,15 @@ async function handler(
         return { statusCode: 405, body: JSON.stringify("Method not allowed") };
     }
   } catch (error) {
-    console.error(error);
+    if (error instanceof MissingFieldError) {
+      return {
+        statusCode: 400,
+        body: error.message,
+      };
+    }
     return {
       statusCode: 500,
-      body: JSON.stringify(
-        error instanceof Error ? error.message : String(error),
-      ),
+      body: error instanceof Error ? error.message : String(error),
     };
   }
 }
