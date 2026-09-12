@@ -30,7 +30,9 @@ async function handler(
     console.error(error);
     return {
       statusCode: 500,
-      body: JSON.stringify(error instanceof Error ? error.message : String(error)),
+      body: JSON.stringify(
+        error instanceof Error ? error.message : String(error),
+      ),
     };
   }
 }
