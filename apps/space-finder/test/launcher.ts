@@ -9,9 +9,12 @@ import { APIGatewayProxyEvent, Context } from "aws-lambda";
 handler(
   {
     httpMethod: "GET",
+    queryStringParameters: {
+      id: "ba3a48c1-bc26-48de-b167-988051da5e16",
+    },
     //body: JSON.stringify({
     //  location: "Dublin",
     //}),
-  } as APIGatewayProxyEvent,
+  } as unknown as APIGatewayProxyEvent,
   {} as Context,
 );
