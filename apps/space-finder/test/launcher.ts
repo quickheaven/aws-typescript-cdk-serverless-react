@@ -1,3 +1,17 @@
-import { handler } from "../src/services/hello";
+import { config } from "dotenv";
+import { resolve } from "path";
 
-handler({} as any, {} as any);
+config({ path: resolve(__dirname, "../.env") });
+
+import { handler } from "../src/services/spaces/handler";
+import { APIGatewayProxyEvent, Context } from "aws-lambda";
+
+handler(
+  {
+    httpMethod: "POST",
+    body: JSON.stringify({
+      location: "Dublin",
+    }),
+  } as APIGatewayProxyEvent,
+  {} as Context,
+);

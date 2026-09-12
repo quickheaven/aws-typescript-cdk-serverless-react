@@ -15,13 +15,12 @@
     "types": ["jest", "node"],
     "resolveJsonModule": true,
     "outDir": "dist",
-    "rootDir": "./src/infra"
+    "rootDir": "."
   },
   "exclude": [
     "node_modules",
     "cdk.out",
     "dist",
-    "test",
     "src/services"
   ]
 }

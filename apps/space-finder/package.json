@@ -19,6 +19,7 @@
     "@aws-sdk/client-dynamodb": "catalog:",
     "@aws-sdk/client-s3": "catalog:",    
     "constructs": "catalog:",
+    "dotenv": "^16.0.3",
     "source-map-support": "catalog:",
     "@types/uuid": "catalog:",
     "uuid": "catalog:"    

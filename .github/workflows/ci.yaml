@@ -8,7 +8,9 @@ jobs:
   build:
     name: Build and Test
     runs-on: ubuntu-latest
-    # env: 
+    env: 
+      AWS_REGION: ${{ vars.AWS_REGION }}
+      TABLE_NAME: ${{ vars.TABLE_NAME }}
     #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
     #  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
 
