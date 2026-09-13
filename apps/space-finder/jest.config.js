@@ -4,6 +4,6 @@ module.exports = {
     setupFiles: ['dotenv/config'],
     testMatch: ['**/test/**/*.test.ts'],
     transform: {
-        '^.+\\.tsx?$': ['ts-jest', { tsconfig: './tsconfig.json', isolatedModules: true }]
+        '^.+\\.tsx?$': ['ts-jest', { tsconfig: './tsconfig.json' }]
     }
 };

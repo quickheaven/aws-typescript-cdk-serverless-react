@@ -3,7 +3,9 @@ import { SignInOutput, fetchAuthSession, signIn } from "@aws-amplify/auth";
 import * as dotenv from "dotenv";
 import * as path from "path";
 
-dotenv.config({ path: path.resolve(__dirname, "..", ".env") });
+if (process.env.CI !== "true") {
+  dotenv.config({ path: path.resolve(__dirname, "..", ".env") });
+}
 
 Amplify.configure({
   Auth: {
