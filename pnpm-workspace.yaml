@@ -47,3 +47,5 @@ catalog:
   "@aws-sdk/lib-dynamodb": "^3.306.0"
   "@aws-sdk/util-dynamodb": "^3.306.0"
   "dotenv": "^16.0.3"
+  "@aws-amplify/auth": "^6.3.12"
+  "aws-amplify": "^6.4.4"

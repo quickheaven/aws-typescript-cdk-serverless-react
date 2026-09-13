@@ -11,9 +11,10 @@ jobs:
     env: 
       AWS_REGION: ${{ vars.AWS_REGION }}
       TABLE_NAME: ${{ vars.TABLE_NAME }}
-    #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-    #  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
-
+      USER_POOL_ID: ${{ vars.USER_POOL_ID }}
+      USER_POOL_CLIENT_ID: ${{ vars.USER_POOL_CLIENT_ID }}
+      TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
+      TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}      
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
