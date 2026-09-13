@@ -9,4 +9,5 @@ test("auth login and get id token", async () => {
   const idToken = await service.getIdToken();
   console.log(idToken);
   expect(idToken).toBeDefined();
+  const credentials = await service.generateTemporaryCredentials();
 });

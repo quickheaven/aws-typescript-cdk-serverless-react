@@ -17,8 +17,10 @@
   "dependencies": {
     "@aws-amplify/auth": "catalog:",
     "aws-cdk-lib": "catalog:",
+    "@aws-sdk/client-cognito-identity": "catalog:",    
     "@aws-sdk/client-dynamodb": "catalog:",
     "@aws-sdk/client-s3": "catalog:",
+    "@aws-sdk/credential-providers": "catalog:",
     "@aws-sdk/lib-dynamodb": "catalog:",
     "@aws-sdk/util-dynamodb": "catalog:",        
     "constructs": "catalog:",
