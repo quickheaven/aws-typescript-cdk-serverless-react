@@ -7,16 +7,17 @@ if (process.env.CI !== "true") {
   dotenv.config({ path: path.resolve(__dirname, "..", ".env") });
 }
 
-Amplify.configure({
-  Auth: {
-    Cognito: {
-      userPoolId: process.env.USER_POOL_ID!,
-      userPoolClientId: process.env.USER_POOL_CLIENT_ID!,
-    },
-  },
-});
-
 export class AuthService {
+  constructor() {
+    Amplify.configure({
+      Auth: {
+        Cognito: {
+          userPoolId: process.env.USER_POOL_ID!,
+          userPoolClientId: process.env.USER_POOL_CLIENT_ID!,
+        },
+      },
+    });
+  }
   public async login(userName: string, password: string) {
     const signInOutput: SignInOutput = await signIn({
       username: userName,
