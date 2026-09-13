@@ -33,5 +33,10 @@ jobs:
       - name: Build
         run: pnpm run build
       
+      - name: Debug env vars
+        run: |
+          echo "USER_POOL_ID is set: ${{ vars.USER_POOL_ID != '' }}"
+          echo "USER_POOL_CLIENT_ID is set: ${{ vars.USER_POOL_CLIENT_ID != '' }}"
+
       - name: Test
         run: pnpm run test
