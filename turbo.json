@@ -16,7 +16,8 @@
     },
     "test": {
       "dependsOn": ["^build"],
-      "cache": false
+      "cache": false,
+      "env": ["USER_POOL_ID", "USER_POOL_CLIENT_ID", "TEST_USERNAME", "TEST_PASSWORD", "AWS_REGION"]
     },
     "dev": {
       "cache": false,
