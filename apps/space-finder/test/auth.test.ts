@@ -7,5 +7,6 @@ test("auth login and get id token", async () => {
     process.env.TEST_PASSWORD!,
   );
   const idToken = await service.getIdToken();
+  console.log(idToken);
   expect(idToken).toBeDefined();
 });
