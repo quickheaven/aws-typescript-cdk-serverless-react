@@ -5,10 +5,11 @@
             "type": "node",
             "request": "launch",
             "name": "Debug auth.test.ts",
-            "runtimeArgs": ["-r", "ts-node/register"],
-            "args": ["${workspaceFolder}/apps/space-finder/test/auth.test.ts"],
+            "program": "${workspaceFolder}/apps/space-finder/node_modules/jest/bin/jest.js",
+            "args": ["test/auth.test.ts", "--no-coverage", "--runInBand"],
             "cwd": "${workspaceFolder}/apps/space-finder",
-            "envFile": "${workspaceFolder}/apps/space-finder/.env"
+            "envFile": "${workspaceFolder}/apps/space-finder/.env",
+            "console": "integratedTerminal"
         }
     ]
 }

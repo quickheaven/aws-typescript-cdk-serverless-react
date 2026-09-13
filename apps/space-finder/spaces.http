@@ -1,7 +1,7 @@
 ### Variable definitions
 @url = https://shjfowznkd.execute-api.us-east-1.amazonaws.com/prod
 @contentType = application/json
-@token = ey
+@token = <YOUR_ID_TOKEN>
 
 ### Get all spaces
 # @name getAllSpaces
@@ -12,32 +12,31 @@ Authorization: {{token}}
 ### Create a new space
 # @name createSpace
 POST {{url}}/spaces
-content-type: {{ contentType }}
 Authorization: {{token}}
- {
+content-type: {{contentType}}
+
+{
+    "name": "Paris Space",
     "location": "Paris"
- }
-
-
-### Set the id
- @id = {{ createSpace.response.body.id }}
+}
 
 
 ### Get a space by ID
 # @name getSpaceById
-GET {{url}}/spaces?id={{id}}
+GET {{url}}/spaces?id={{createSpace.response.body.id}}
 Authorization: {{token}}
 
 ### Update a space by ID
 # @name updateSpace
-PUT {{url}}/spaces?id={{id}}
-content-type: {{ contentType }}
+PUT {{url}}/spaces?id={{createSpace.response.body.id}}
+content-type: {{contentType}}
 Authorization: {{token}}
- {
+
+{
     "location": "Paris2"
- }
+}
 
 ### Delete a space by ID
 # @name deleteSpace
-DELETE {{url}}/spaces?id={{id}}
+DELETE {{url}}/spaces?id={{createSpace.response.body.id}}
 Authorization: {{token}}
