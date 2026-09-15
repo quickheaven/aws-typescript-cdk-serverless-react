@@ -40,4 +40,3 @@ docker-compose.yml
 
 # CDK
 cdk.out
-outputs.json

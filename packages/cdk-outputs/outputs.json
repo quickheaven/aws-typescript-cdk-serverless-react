@@ -1,0 +1,13 @@
+{
+  "AuthStack": {
+    "SpaceUserPoolId": "",
+    "SpaceUserPoolClientId": "",
+    "SpaceIdentityPoolId": ""
+  },
+  "DataStack": {
+    "SpaceFinderPhotosBucketName": ""
+  },
+  "ApiStack": {
+    "SpacesApiEndpoint36C4F3B6": ""
+  }
+}
