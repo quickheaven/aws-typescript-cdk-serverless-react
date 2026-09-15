@@ -1,5 +1,5 @@
 {
-  "name": "space-finder",
+  "name": "space-finder-api",
   "version": "1.0.0",
   "main": "dist/lib/index.js",
   "bin": {
@@ -9,6 +9,7 @@
     "build": "tsc",
     "test": "jest --passWithNoTests",
     "watch": "tsc -w",
+    "deploy": "cdk deploy --all --outputs-file ../../packages/cdk-outputs/outputs.json",
     "cdk": "cdk",
     "lint": "eslint .",
     "format": "prettier --write \"bin/**/*.ts\" \"lib/**/*.ts\"",
